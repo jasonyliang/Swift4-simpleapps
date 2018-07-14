@@ -84,20 +84,20 @@ enum AnswerType: String {
 
 protocol QuestionGenerator {
     func generateRandomQuestion() -> Question
-    
+
 }
 class Answer {
     
 }
 protocol AnswerGenerator: QuestionGenerator {
-    func generateRandomAnswer -> Answer
+    func generateRandomAnswer () -> Answer
 }
-class Jeopardy: AnswerGenerator {
+/* class Jeopardy: AnswerGenerator {
     func generateRandomAnswer() -> Answer {
         // need to fulfill both
     }
 }
-
+*/
 class Quiz: QuestionGenerator {
     func generateRandomQuestion() -> Question {
         let randomNumeral = Int(arc4random_uniform(4))
