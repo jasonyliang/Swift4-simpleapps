@@ -50,7 +50,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="Qhg-W1-cdT"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="kUV-Es-t2F">
                             <connections>
-                                <segue destination="Uh6-OK-cZa" kind="show" id="N5S-TA-Kvb"/>
+                                <segue destination="Uh6-OK-cZa" kind="show" identifier="presentColorPickerVC" id="N5S-TA-Kvb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
