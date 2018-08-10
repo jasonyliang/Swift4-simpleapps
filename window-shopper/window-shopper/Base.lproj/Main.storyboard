@@ -70,6 +70,10 @@
                             <constraint firstItem="08W-Nf-5cp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yc6-h6-VEc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="priceTxt" destination="VIK-bd-Wf2" id="a86-3q-Bm9"/>
+                        <outlet property="wageTxt" destination="4Jd-0M-yKG" id="Kqn-gU-f9n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
