@@ -12,6 +12,7 @@
 		EB113953211ECA6000CF2E65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB113951211ECA6000CF2E65 /* Main.storyboard */; };
 		EB113955211ECA6000CF2E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB113954211ECA6000CF2E65 /* Assets.xcassets */; };
 		EB113958211ECA6000CF2E65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB113956211ECA6000CF2E65 /* LaunchScreen.storyboard */; };
+		EB1139672120ADE000CF2E65 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1139662120ADE000CF2E65 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EB113954211ECA6000CF2E65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB113957211ECA6000CF2E65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB113959211ECA6000CF2E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1139662120ADE000CF2E65 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		EB11394C211ECA6000CF2E65 /* coder-clothing */ = {
 			isa = PBXGroup;
 			children = (
+				EB1139612120AD2B00CF2E65 /* Controller */,
+				EB1139602120AD2400CF2E65 /* Views */,
+				EB11395F2120AD1D00CF2E65 /* Model */,
 				EB11394D211ECA6000CF2E65 /* AppDelegate.swift */,
-				EB11394F211ECA6000CF2E65 /* CategoriesVC.swift */,
 				EB113951211ECA6000CF2E65 /* Main.storyboard */,
 				EB113954211ECA6000CF2E65 /* Assets.xcassets */,
 				EB113956211ECA6000CF2E65 /* LaunchScreen.storyboard */,
 				EB113959211ECA6000CF2E65 /* Info.plist */,
 			);
 			path = "coder-clothing";
+			sourceTree = "<group>";
+		};
+		EB11395F2120AD1D00CF2E65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB1139602120AD2400CF2E65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB1139662120ADE000CF2E65 /* CategoryCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB1139612120AD2B00CF2E65 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB11394F211ECA6000CF2E65 /* CategoriesVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +165,7 @@
 			files = (
 				EB113950211ECA6000CF2E65 /* CategoriesVC.swift in Sources */,
 				EB11394E211ECA6000CF2E65 /* AppDelegate.swift in Sources */,
+				EB1139672120ADE000CF2E65 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
