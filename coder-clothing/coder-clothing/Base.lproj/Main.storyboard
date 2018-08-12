@@ -36,6 +36,27 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uNU-Ct-DgF">
                                 <rect key="frame" x="0.0" y="74.5" width="375" height="528.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="113" id="ckq-Ih-kBJ">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="113"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ckq-Ih-kBJ" id="QPU-Ju-QW8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="112.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CuA-Rh-2dw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="112.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="CuA-Rh-2dw" secondAttribute="trailing" id="eAY-09-dUd"/>
+                                                <constraint firstItem="CuA-Rh-2dw" firstAttribute="top" secondItem="QPU-Ju-QW8" secondAttribute="top" id="ggx-jZ-FYu"/>
+                                                <constraint firstAttribute="bottom" secondItem="CuA-Rh-2dw" secondAttribute="bottom" id="k69-jz-LM8"/>
+                                                <constraint firstItem="CuA-Rh-2dw" firstAttribute="leading" secondItem="QPU-Ju-QW8" secondAttribute="leading" id="md7-HH-aGd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
