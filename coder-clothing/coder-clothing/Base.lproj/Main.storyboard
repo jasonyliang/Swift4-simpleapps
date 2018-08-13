@@ -68,7 +68,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="categoryTitle" destination="hOq-1l-anY" id="CIY-X4-phI"/>
+                                            <outlet property="categoryImage" destination="CuA-Rh-2dw" id="GiI-CD-mlg"/>
+                                            <outlet property="categoryTitle" destination="hOq-1l-anY" id="tgg-g5-nk2"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -85,6 +86,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="CODER SWAG" id="Igr-qB-Gkh"/>
+                    <connections>
+                        <outlet property="categoryTable" destination="uNU-Ct-DgF" id="t9n-uK-Kjt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
