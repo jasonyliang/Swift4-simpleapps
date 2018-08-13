@@ -13,6 +13,8 @@
 		EB113955211ECA6000CF2E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB113954211ECA6000CF2E65 /* Assets.xcassets */; };
 		EB113958211ECA6000CF2E65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB113956211ECA6000CF2E65 /* LaunchScreen.storyboard */; };
 		EB1139672120ADE000CF2E65 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1139662120ADE000CF2E65 /* CategoryCell.swift */; };
+		EB1139692121B1FF00CF2E65 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1139682121B1FF00CF2E65 /* Category.swift */; };
+		EB11396D2121B8BD00CF2E65 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11396C2121B8BD00CF2E65 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		EB113957211ECA6000CF2E65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB113959211ECA6000CF2E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB1139662120ADE000CF2E65 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		EB1139682121B1FF00CF2E65 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		EB11396C2121B8BD00CF2E65 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		EB11394C211ECA6000CF2E65 /* coder-clothing */ = {
 			isa = PBXGroup;
 			children = (
+				EB11396A2121B7C400CF2E65 /* Services */,
 				EB1139612120AD2B00CF2E65 /* Controller */,
 				EB1139602120AD2400CF2E65 /* Views */,
 				EB11395F2120AD1D00CF2E65 /* Model */,
@@ -71,6 +76,7 @@
 		EB11395F2120AD1D00CF2E65 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EB1139682121B1FF00CF2E65 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,6 +95,14 @@
 				EB11394F211ECA6000CF2E65 /* CategoriesVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB11396A2121B7C400CF2E65 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EB11396C2121B8BD00CF2E65 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +180,8 @@
 				EB113950211ECA6000CF2E65 /* CategoriesVC.swift in Sources */,
 				EB11394E211ECA6000CF2E65 /* AppDelegate.swift in Sources */,
 				EB1139672120ADE000CF2E65 /* CategoryCell.swift in Sources */,
+				EB1139692121B1FF00CF2E65 /* Category.swift in Sources */,
+				EB11396D2121B8BD00CF2E65 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
