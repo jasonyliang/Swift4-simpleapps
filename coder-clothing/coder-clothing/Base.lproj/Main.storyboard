@@ -69,8 +69,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="categoryImage" destination="CuA-Rh-2dw" id="GiI-CD-mlg"/>
-                                            <outlet property="categoryTitle" destination="hOq-1l-anY" id="tgg-g5-nk2"/>
+                                            <outlet property="categoryImage" destination="CuA-Rh-2dw" id="A0n-nk-rq4"/>
+                                            <outlet property="categoryTitle" destination="hOq-1l-anY" id="cRs-gt-ZZJ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -89,17 +89,17 @@
                     <navigationItem key="navigationItem" title="CODER SWAG" id="Igr-qB-Gkh"/>
                     <connections>
                         <outlet property="categoryTable" destination="uNU-Ct-DgF" id="t9n-uK-Kjt"/>
-                        <segue destination="Oqb-Wo-MFU" kind="show" id="vyb-1l-5pA"/>
+                        <segue destination="Oqb-Wo-MFU" kind="show" identifier="ProductsVC" id="vyb-1l-5pA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="648.79999999999995" y="53.523238380809602"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="oNn-xI-evf">
             <objects>
-                <viewController id="Oqb-Wo-MFU" sceneMemberID="viewController">
+                <viewController id="Oqb-Wo-MFU" customClass="ProductsVC" customModule="coder_clothing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LYp-K8-t4j"/>
                         <viewControllerLayoutGuide type="bottom" id="AQD-jZ-Zfd"/>
@@ -191,6 +191,9 @@
                             <constraint firstItem="3Gs-wX-QxK" firstAttribute="leading" secondItem="ndE-k3-yML" secondAttribute="leadingMargin" id="v35-2p-r1q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="I6i-0O-YLU" id="sqN-8I-pOH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jlU-8f-fT4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
