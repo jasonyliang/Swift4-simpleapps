@@ -16,8 +16,8 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        productsCollection.delegate = self
         productsCollection.dataSource = self
+        productsCollection.delegate = self
         // Do any additional setup after loading the view.
     }
     

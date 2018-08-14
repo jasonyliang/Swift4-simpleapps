@@ -7,7 +7,6 @@
 //
 
 import Foundation
-
 class DataService {
     static let instance = DataService()
     
@@ -26,41 +25,40 @@ class DataService {
     ]
     
     private let hoodies = [
-        Product(title: "Devslopes Logo Hoodies Gray", price: "$32", imageName: "hoodie01.png"),
-        Product(title: "Devslopes Logo Hoodies Red", price: "$32", imageName: "hoodie02.png"),
-        Product(title: "Devslopes Hoodies Gray", price: "$32", imageName: "hoodie03.png"),
-        Product(title: "Devslopes Hoodies Black", price: "$32", imageName: "hoodie04.png")
-    ]
+        Product(title: "Devslopes Logo Hoodie Grey", price: "$32", imageName: "hoodie01.png"),
+        Product(title: "Devslopes Logo Hoodie Red", price: "$32", imageName: "hoodie02.png"),
+        Product(title: "Devslopes Hoodie Grey", price: "$32", imageName: "hoodie03.png"),
+        Product(title: "Devslopes Hoodie Black", price: "$32", imageName: "hoodie04.png"),
+        
+        ]
     
     private let shirts = [
         Product(title: "Devslopes Logo Shirt Black", price: "$18", imageName: "shirt01.png"),
         Product(title: "Devslopes Badge Shirt Light Grey", price: "$19", imageName: "shirt02.png"),
         Product(title: "Devslopes Logo Shirt Red", price: "$18", imageName: "shirt03.png"),
-        Product(title: "Hustle Delegate Grey", price: "$20", imageName: "shirt04.png"),
-        Product(title: "Kickflip Studios Black", price: "$15", imageName: "shirt05.png")
+        Product(title: "Hustle Delegate Grey", price: "$18", imageName: "shirt04.png"),
+        Product(title: "Kickflip Studios Black", price: "$18", imageName: "shirt05.png")
     ]
     
-    private let digitalGoods = [Product]() // empty array
-    
+    private let digitalGoods = [Product]()
     
     func getCategories() -> [Category] {
         return categories
     }
     
-    func getProducts(forCategoryTitle title: String) -> [Product] {
+    func getProducts(forCategoryTitle title:String) -> [Product] {
         switch title {
         case "SHIRTS":
             return getShirts()
-        case "HOODIES":
-            return getHoodies()
         case "HATS":
             return getHats()
+        case "HOODIES":
+            return getHoodies()
         case "DIGITAL":
             return getDigitalGoods()
         default:
             return getShirts()
         }
-        
     }
     
     func getHats() -> [Product] {
@@ -71,11 +69,12 @@ class DataService {
         return hoodies
     }
     
-    func getDigitalGoods() -> [Product] {
-        return digitalGoods
-    }
-    
     func getShirts() -> [Product] {
         return shirts
     }
+    
+    func getDigitalGoods() -> [Product] {
+        return digitalGoods
+    }
 }
+
